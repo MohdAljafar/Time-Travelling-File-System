@@ -55,7 +55,7 @@ Appends content to the file. This creates a new version if the active version is
 ```UPDATE filename content```
 Replaces the file’s content. Follows the same versioning logic as INSERT.
 
-```SNAPSHOT filename message```\
+```SNAPSHOT filename message```
 Marks the active version as a snapshot, making its content immutable. It stores the provided message and the current time.
 
 ```ROLLBACK filename version_id```
@@ -67,5 +67,10 @@ Lists all snapshotted versions of the file chronologically, which lie on the pat
 
 ### System-Wide Analytics
 
-- RECENTFILES k
-- BIGGESTTREES k
+```RECENTFILES k```
+Lists files in descending order of their last modification time restricted to the
+first num entries.
+
+```BIGGESTTREES k```
+ Lists files in descending order of their total version count restricted to the first
+num entries.
