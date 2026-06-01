@@ -1,0 +1,16 @@
+INSERT notes Hello
+
+SNAPSHOT notes Initial Version
+
+INSERT notes World
+
+READ notes
+
+Output:
+HelloWorld
+
+HISTORY notes
+
+Output:
+Version 0 : Root Snapshot
+Version 1 : Initial Version

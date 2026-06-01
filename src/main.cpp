@@ -16,6 +16,8 @@ int main(){
         std::stringstream ss(line);
         std::string command;
         ss >> command;
+        for (char &c : command) c = tolower(c);
+        
         if(command == "create"){
             std::string filename;
             ss >> filename;
