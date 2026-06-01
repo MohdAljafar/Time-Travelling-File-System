@@ -18,7 +18,7 @@ public:
 
 
     // Constructor for creating a root version
-    TreeNode() : content(""), message("create file"), parent(nullptr), version_id(0), children({}) {
+    TreeNode() : content(""), message("Root Snapshot"), parent(nullptr), version_id(0), children({}) {
         created_timestamp = time(nullptr); //current time
         last_modified_timestamp = created_timestamp;
         snapshot_timestamp = created_timestamp; //root is a snapshot

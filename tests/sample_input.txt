@@ -1,16 +1,15 @@
+CREATE notes
 INSERT notes Hello
-
-SNAPSHOT notes Initial Version
-
+SNAPSHOT notes Snap It
 INSERT notes World
-
 READ notes
 
 Output:
-HelloWorld
+ World
 
 HISTORY notes
 
 Output:
-Version 0 : Root Snapshot
-Version 1 : Initial Version
+VersionID: 0 | Timestamp: 2026-06-01 20:27:13 | Message: Root Snapshot
+--------------------------------------
+VersionID: 1 | Timestamp: 2026-06-01 20:27:13 | Message:  Snap It
